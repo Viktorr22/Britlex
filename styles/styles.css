@@ -1,0 +1,215 @@
+:root {
+  --primary-font: 'Poppins', sans-serif;
+  --primary-text-color: #8f95a5;
+  --title-section-color: #000000;
+  --menu-text-color: #263238;
+  --primary-bg-color: #ffffff;
+  --skills-bg-color: #f5f5f5;
+}
+
+body {
+  font-family: var(--primary-font);
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+}
+/* header */
+.logo {
+  font-size: 36px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  color: var(--title-section-color);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+}
+.lex {
+  color: #939393;
+}
+.link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--menu-text-color);
+  text-decoration: none;
+}
+.link:hover,
+.link:focus {
+  color: var(--primary-text-color);
+}
+.link.current {
+  color: var(--primary-text-color);
+}
+.menu {
+  list-style: none;
+}
+.header-button {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: var(--primary-bg-color);
+  cursor: pointer;
+}
+.header-button:hover,
+.header-button:focus {
+  color: var(--primary-text-color);
+}
+/* hero */
+.hero-title {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 1.25;
+  color: var(--title-section-color);
+}
+.hero-text {
+  font-size: 24px;
+  line-height: 1.5;
+}
+.hero-button {
+  font-family: inherit;
+  font-size: 36px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-bg-color);
+  background-color: var(--menu-text-color);
+  cursor: pointer;
+}
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--primary-text-color);
+}
+/* skills */
+.skills-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.5;
+  color: var(--title-section-color);
+}
+.skills-list {
+  list-style: none;
+}
+.skills-list-title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.5;
+  color: var(--menu-text-color);
+}
+.skills-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.skills-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--primary-bg-color);
+  background-color: var(--menu-text-color);
+  text-decoration: none;
+}
+.skills-link:hover,
+.skills-link:focus {
+  color: var(--primary-text-color);
+}
+.skills-item {
+  background-color: var(--skills-bg-color);
+}
+/* about us */
+.about-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.5;
+  color: var(--title-section-color);
+}
+.about-text {
+  font-size: 20px;
+  line-height: 1.8;
+}
+.about-list {
+  list-style: none;
+}
+.about-figure {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.5;
+  color: var(--menu-text-color);
+}
+.figure-text {
+  font-size: 20px;
+  line-height: 1.5;
+}
+/* pricing */
+.pricing-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.5;
+  color: var(--title-section-color);
+}
+.pricing-option {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.6;
+  text-transform: capitalize;
+  color: var(--menu-text-color);
+}
+.pricing-text {
+  font-size: 20px;
+  line-height: 1.5;
+}
+.pricing-price {
+  font-size: 24px;
+  line-height: 1.5;
+  color: var(--menu-text-color);
+  /* text-align: center; */
+}
+.pricing-period {
+  font-size: 18px;
+  line-height: 1.5;
+  /* text-align: center; */
+  color: #546269;
+}
+
+/* Contact Us */
+.contacts-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.5;
+  color: var(--title-section-color);
+}
+.contacts-text {
+  font-size: 20px;
+  line-height: 1.5;
+}
+.contacts-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-bg-color);
+  background-color: var(--menu-text-color);
+}
+.contacts-button:hover,
+.contacts-button:focus {
+  color: var(--primary-text-color);
+}
+
+/* footer */
+.footer-list {
+  list-style: none;
+}
+.footer-link {
+  font-size: 24px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--menu-text-color);
+}
