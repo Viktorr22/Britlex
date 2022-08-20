@@ -1,3 +1,36 @@
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
 :root {
   --primary-font: 'Poppins', sans-serif;
   --primary-text-color: #8f95a5;
@@ -12,7 +45,28 @@ body {
   color: var(--primary-text-color);
   background-color: var(--primary-bg-color);
 }
+.container {
+  width: 1368px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: aquamarine;
+}
+.hero {
+  padding-top: 0px;
+}
 /* header */
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   font-size: 36px;
   line-height: 1.5;
@@ -21,6 +75,7 @@ body {
   color: var(--title-section-color);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-decoration: none;
+  margin-right: 236px;
 }
 .lex {
   color: #939393;
@@ -31,6 +86,9 @@ body {
   line-height: 1.5;
   color: var(--menu-text-color);
   text-decoration: none;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  display: block;
 }
 .link:hover,
 .link:focus {
@@ -41,6 +99,8 @@ body {
 }
 .menu {
   list-style: none;
+  display: flex;
+  column-gap: 50px;
 }
 .header-button {
   font-family: inherit;
@@ -49,22 +109,42 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   background-color: var(--primary-bg-color);
-  cursor: pointer;
+  margin-left: auto;
+
+  width: 312px;
+  height: 70px;
+  border-radius: 10px;
+  border-color: var(--menu-text-color);
+  padding: 20px 56px;
 }
 .header-button:hover,
 .header-button:focus {
   color: var(--primary-text-color);
 }
 /* hero */
+.bulb-hero {
+  display: flex;
+  align-items: center;
+}
+.hero-container {
+  display: flex;
+}
+.hero-img {
+  margin-right: 144px;
+}
 .hero-title {
   font-weight: 600;
   font-size: 64px;
   line-height: 1.25;
   color: var(--title-section-color);
+  width: 386px;
+  margin-right: 35px;
+  margin-bottom: 40px;
 }
 .hero-text {
   font-size: 24px;
   line-height: 1.5;
+  margin-bottom: 60px;
 }
 .hero-button {
   font-family: inherit;
@@ -74,7 +154,11 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-bg-color);
   background-color: var(--menu-text-color);
-  cursor: pointer;
+
+  width: 426px;
+  border-radius: 10px;
+  border-color: var(--menu-text-color);
+  padding: 23px 64px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -86,10 +170,25 @@ body {
   font-size: 48px;
   line-height: 1.5;
   color: var(--title-section-color);
+  margin-bottom: 60px;
+  text-align: center;
 }
 .skills-list {
   list-style: none;
+  display: flex;
 }
+.skills-blok-second {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.skills-blok-third {
+  display: flex;
+}
+.vertical {
+  flex-basis: 426px;
+}
+
 .skills-list-title {
   font-weight: 600;
   font-size: 30px;
@@ -116,11 +215,19 @@ body {
   background-color: var(--skills-bg-color);
 }
 /* about us */
+
+.about-block {
+  display: flex;
+}
+.about-block-first {
+  margin-right: 146px;
+}
 .about-title {
   font-weight: 600;
   font-size: 48px;
   line-height: 1.5;
   color: var(--title-section-color);
+  margin-bottom: 60px;
 }
 .about-text {
   font-size: 20px;
@@ -128,23 +235,40 @@ body {
 }
 .about-list {
   list-style: none;
+  display: flex;
+  column-gap: 131px;
 }
 .about-figure {
   font-weight: 600;
   font-size: 48px;
   line-height: 1.5;
   color: var(--menu-text-color);
+  text-align: center;
 }
 .figure-text {
   font-size: 20px;
   line-height: 1.5;
+  text-align: center;
 }
 /* pricing */
+
 .pricing-title {
   font-weight: 600;
   font-size: 48px;
   line-height: 1.5;
   color: var(--title-section-color);
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.pricing-list {
+  display: flex;
+  column-gap: 30px;
+  list-style: none;
+}
+.pricing-item {
+  flex-basis: calc(100% / 3);
 }
 .pricing-option {
   font-weight: 600;
@@ -152,6 +276,8 @@ body {
   line-height: 1.6;
   text-transform: capitalize;
   color: var(--menu-text-color);
+  margin-top: 31px;
+  margin-bottom: 20px;
 }
 .pricing-text {
   font-size: 20px;
@@ -161,12 +287,10 @@ body {
   font-size: 24px;
   line-height: 1.5;
   color: var(--menu-text-color);
-  /* text-align: center; */
 }
 .pricing-period {
   font-size: 18px;
   line-height: 1.5;
-  /* text-align: center; */
   color: #546269;
 }
 
